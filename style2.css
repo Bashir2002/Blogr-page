@@ -1,0 +1,329 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+header{
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    place-content: center;
+    padding: 50px;
+
+}
+.wrapper{
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: hsl(353, 100%, 62%);
+    padding: 30px 20px;
+    height: 500px;
+    border-bottom-left-radius: 100px;
+    background-image: url(images/bg-pattern-intro-mobile.svg);
+    background-size: contain;
+    background-position: 0%  10%;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    color: hsl(356, 100%, 66%);
+
+
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.container{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .container button{
+    display: none;
+} */
+/* nav */
+    nav ul{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+/* nav */
+/* .menu{
+    display: block;
+} */
+.header-content{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+.header-content h1{
+    font-size: 220%;
+    margin-bottom: 10px;
+
+}
+.header-content p{
+    font-size: 130%;
+    margin-bottom: 60px;
+}
+.btn{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    margin-right: 10px;
+}
+.learn{
+    background-color: unset;
+    border: 1px solid white;
+}
+.wrapper2{
+    max-width: 375px;
+    margin: 0 auto;
+    height: auto;
+    /* border: 1px solid rgb(192, 177, 177); */
+    box-shadow: 5px 5px 5px 2px rgb(192, 176, 176);
+    color: hsl(207, 13%, 34%);
+}
+.wrapper2 p{
+    line-height: 2;
+}
+section h2{
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 170%;
+}
+.section{
+    margin-top: 60px;
+    text-align: center;
+    padding-right:15px ;
+    padding-left: 15px;
+
+}
+.section1{
+    position: relative;
+    /* background-image: url(images/bg-pattern-circles.svg); */
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* height: 350px; */
+    padding-right:10px ;
+    padding-left: 10px;
+
+}
+.section1 img{
+    /* position: absolute;  */
+    text-align: center;
+    width: 355px;
+    height: 305px;
+    margin-top: 30px;
+
+    /* width: 345px;
+    height: 345px; */
+}
+.imged{
+    display: none;
+}
+.section3{
+    margin-bottom: 300px; 
+}
+.section4{
+    height: 600px;
+    background-color: hsl(237, 17%, 21%);
+    position: relative;
+    overflow: hidden; 
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    /* margin-top: 100px; */
+}
+.img2{
+    width: 575px;
+    height: 555px;
+    position: absolute;
+    overflow: hidden;
+    left: -110px;
+    top: -200px;
+}
+.div1{
+    position: relative;
+}
+.img1{
+    position: absolute;
+    z-index: 1;
+    width:350px ;
+    left: -0px;
+    top: -170px;
+}
+.content4{
+    z-index: 999;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 150px;
+}
+.content4 h2{
+    color: white;
+    font-size: 200%;
+}
+.section5{
+    position: relative;
+    height: 350px;
+}
+.section5 img{
+    position: absolute;
+    left: -55px;
+    top: 0;
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.section8{
+    background-color: hsl(240, 10%, 16%);
+    list-style: none;
+    border-top-right-radius: 100px;
+    color: hsl(240, 2%, 79%);
+    font-size: 120%;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.section8 div{
+    transform: translateX(300px);
+    /* overflow: hidden; */
+    animation-name: width;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.section8 div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section8 h1{
+    display: block;
+    padding: 50px;
+    font-size: 200%;
+    /* margin: 100px; */
+}
+.section8 ul{
+    list-style-type: none;
+}
+.section8 ul li{
+    padding: 5px;
+}
+.section8 div h4{
+    margin: 20px;
+}
+@media only screen and (min-width: 900px) {
+    .wrapper{
+        max-width: 1240px;
+        height: 400px;
+        background-image: url(images/bg-pattern-intro-desktop.svg);
+        background-color: hsl(13, 100%, 72%);
+        background-position: center;
+        background-size: cover;
+        padding-inline: 100px;
+    }
+    .container{
+
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        margin-right: 150px;
+
+    }
+    nav ul li{
+        margin-right: 30px;
+    }
+    .container a{
+        text-decoration: none;
+        color: white;
+    }
+    .button{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .wrapper2{
+        max-width: 1240px;
+    }
+    .section1 img{
+        padding-top: 100px;
+        padding-bottom: ;
+        float: right;
+        height: 475px;
+        width: 395px;
+    }
+    .section8{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+    }
+    .section3, .section2{
+        width: 70%;
+    }
+    .section3{
+        margin-bottom: 100px;
+    }
+    .section4{
+        height: 300px;
+    }
+    .img1{
+        top: -50px;
+    }
+    .content4{
+        text-align: center;
+        float: right;
+        width: 60%;
+        top: 0;
+    }
+    .section5{
+        float: left;
+        width: 50%;
+        margin-bottom: 100px;
+    }
+    .section5 img{
+        float: left;
+        width: 50%;
+    }
+    .section6,.section7{
+        width: ;
+    }
+}
+
+@keyframes grow {
+    from{
+        width: 0 ;
+        opacity: 0;
+    }
+    to{
+        width: 130%;
+        opacity: 1;
+    }
+}
+@keyframes width{
+    20%{
+        opacity: 0.4;
+        transform: rotate(360deg);
+        transform: translateX(200px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: rotate(90deg);
+        transform:translateX(100px) ;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        transform: rotate(360deg);
+    }
+}
